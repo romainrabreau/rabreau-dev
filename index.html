@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matthieu Rabreau — Création de sites web</title>
+    <meta name="description" content="Création de sites web professionnels pour commerces et entreprises. Sites vitrines modernes, rapides et accessibles.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="#" class="logo">rabreau<span>.dev</span></a>
+        <div class="nav-links">
+            <a href="#services">Services</a>
+            <a href="#tarifs">Tarifs</a>
+            <a href="#contact" class="btn-nav">Contact</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <p class="hero-tag">Freelance &mdash; Nantes</p>
+            <h1>Je crée le site web<br>de votre commerce.</h1>
+            <p class="hero-sub">Un site moderne, rapide et qui vous ressemble.<br>À partir de <strong>99 &euro;</strong>.</p>
+            <a href="#contact" class="btn-primary">Demander un devis gratuit</a>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <h2>Ce que je propose</h2>
+        <div class="cards">
+            <div class="card">
+                <div class="card-icon">&#9874;</div>
+                <h3>Site vitrine</h3>
+                <p>Présentez votre activité avec un site élégant : vos services, vos horaires, votre localisation. Tout ce qu'il faut pour être trouvé en ligne.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">&#9749;</div>
+                <h3>Restaurant & food</h3>
+                <p>Menu en ligne, photos de vos plats, lien vers vos réseaux. Un site qui donne envie de pousser la porte.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">&#10024;</div>
+                <h3>Salon & bien-être</h3>
+                <p>Coiffeur, esthéticienne, coach... Montrez votre savoir-faire et permettez à vos clients de vous contacter facilement.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">&#128736;</div>
+                <h3>Artisan & services</h3>
+                <p>Plombier, électricien, photographe... Un site simple et efficace pour inspirer confiance et générer des contacts.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="tarifs" class="pricing">
+        <h2>Tarifs simples</h2>
+        <p class="pricing-sub">Pas d'abonnement, pas de frais cachés. Vous payez une fois.</p>
+        <div class="pricing-cards">
+            <div class="pricing-card">
+                <h3>Essentiel</h3>
+                <div class="price">99 &euro;</div>
+                <ul>
+                    <li>Site one-page</li>
+                    <li>Design sur-mesure</li>
+                    <li>Adapté mobile</li>
+                    <li>Formulaire de contact</li>
+                    <li>Mise en ligne incluse</li>
+                </ul>
+                <a href="#contact" class="btn-secondary">Choisir</a>
+            </div>
+            <div class="pricing-card featured">
+                <div class="badge">Populaire</div>
+                <h3>Pro</h3>
+                <div class="price">149 &euro;</div>
+                <ul>
+                    <li>Jusqu'à 5 pages</li>
+                    <li>Design sur-mesure</li>
+                    <li>Adapté mobile</li>
+                    <li>Formulaire de contact</li>
+                    <li>Galerie photos</li>
+                    <li>Lien Google Maps</li>
+                    <li>Mise en ligne incluse</li>
+                </ul>
+                <a href="#contact" class="btn-primary">Choisir</a>
+            </div>
+            <div class="pricing-card">
+                <h3>Sur-mesure</h3>
+                <div class="price">Sur devis</div>
+                <ul>
+                    <li>Pages illimitées</li>
+                    <li>Fonctionnalités avancées</li>
+                    <li>Réservation en ligne</li>
+                    <li>Menu / catalogue</li>
+                    <li>Tout le reste inclus</li>
+                </ul>
+                <a href="#contact" class="btn-secondary">Me contacter</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Un projet ? Parlons-en.</h2>
+        <p class="contact-sub">Décrivez votre activité et ce dont vous avez besoin. Je vous réponds sous 24h.</p>
+        <form action="https://formsubmit.co/matthieu@rabreau.dev" method="POST" class="contact-form">
+            <input type="hidden" name="_subject" value="Nouveau message depuis rabreau.dev">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="https://rabreau.dev/#merci">
+            <div class="form-row">
+                <input type="text" name="name" placeholder="Votre nom" required>
+                <input type="email" name="email" placeholder="Votre email" required>
+            </div>
+            <input type="text" name="business" placeholder="Votre activité (ex: restaurant, salon de coiffure...)">
+            <textarea name="message" rows="5" placeholder="Décrivez votre projet..." required></textarea>
+            <button type="submit" class="btn-primary">Envoyer</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Matthieu Rabreau &mdash; rabreau.dev</p>
+    </footer>
+</body>
+</html>
