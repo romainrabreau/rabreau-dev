@@ -7,12 +7,12 @@
     <meta name="description" content="Création de sites web professionnels pour commerces et entreprises. Sites vitrines modernes, rapides et accessibles.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Share+Tech+Mono&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <nav>
-        <a href="#" class="logo">rabreau<span>.dev</span></a>
+        <a href="#" class="logo"><span class="logo-bracket">[</span> matthieu<span class="logo-accent">.rabreau</span> <span class="logo-bracket">]</span></a>
         <div class="nav-links">
             <a href="#services">Services</a>
             <a href="#tarifs">Tarifs</a>
@@ -22,14 +22,23 @@
 
     <section class="hero">
         <div class="hero-content">
-            <p class="hero-tag">Freelance &mdash; Nantes</p>
-            <h1>Je crée le site web<br>de votre commerce.</h1>
+            <p class="hero-tag"><span class="terminal-prompt">&gt;_</span> Freelance &mdash; Nantes</p>
+            <h1 class="glitch-text">Je crée le site web<br>de votre commerce.</h1>
             <p class="hero-sub">Un site moderne, rapide et qui vous ressemble.<br>À partir de <strong>99 &euro;</strong>.</p>
-            <a href="#contact" class="btn-primary">Demander un devis gratuit</a>
+            <div class="hero-actions">
+                <a href="#contact" class="btn-primary">Demander un devis gratuit <span class="btn-arrow">&rarr;</span></a>
+            </div>
+            <div class="hero-status">
+                <span class="status-dot"></span>
+                <span class="status-text font-mono-ui">disponible pour nouveaux projets</span>
+            </div>
         </div>
     </section>
 
+    <div class="section-divider"></div>
+
     <section id="services" class="services">
+        <p class="section-tag font-mono-ui">// services</p>
         <h2>Ce que je propose</h2>
         <div class="cards">
             <div class="card">
@@ -55,7 +64,10 @@
         </div>
     </section>
 
+    <div class="section-divider"></div>
+
     <section id="tarifs" class="pricing">
+        <p class="section-tag font-mono-ui">// tarifs</p>
         <h2>Tarifs simples</h2>
         <p class="pricing-sub">Pas d'abonnement, pas de frais cachés. Vous payez une fois.</p>
         <div class="pricing-cards">
@@ -101,10 +113,13 @@
         </div>
     </section>
 
+    <div class="section-divider"></div>
+
     <section id="contact" class="contact">
+        <p class="section-tag font-mono-ui">// contact</p>
         <h2>Un projet ? Parlons-en.</h2>
         <p class="contact-sub">Décrivez votre activité et ce dont vous avez besoin. Je vous réponds sous 24h.</p>
-        <form action="https://formsubmit.co/matthieu@rabreau.dev" method="POST" class="contact-form">
+        <form action="https://formsubmit.co/matthieurabreau@gmail.com" method="POST" class="contact-form">
             <input type="hidden" name="_subject" value="Nouveau message depuis rabreau.dev">
             <input type="hidden" name="_captcha" value="false">
             <input type="hidden" name="_next" value="https://rabreau.dev/#merci">
@@ -114,12 +129,15 @@
             </div>
             <input type="text" name="business" placeholder="Votre activité (ex: restaurant, salon de coiffure...)">
             <textarea name="message" rows="5" placeholder="Décrivez votre projet..." required></textarea>
-            <button type="submit" class="btn-primary">Envoyer</button>
+            <button type="submit" class="btn-primary">Envoyer <span class="btn-arrow">&rarr;</span></button>
         </form>
     </section>
 
     <footer>
-        <p>&copy; 2026 Matthieu Rabreau &mdash; rabreau.dev</p>
+        <div class="footer-content">
+            <span class="font-hacker">[ matthieu.rabreau ]</span>
+            <p>&copy; 2026 Matthieu Rabreau &mdash; matthieurabreau@gmail.com</p>
+        </div>
     </footer>
 </body>
 </html>
